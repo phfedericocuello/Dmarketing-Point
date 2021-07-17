@@ -125,6 +125,7 @@ body {
     }
     .contacto {
         padding: 7%;
+        width:100%;
         .carousel {
             width: 35rem;
             height: 30rem;
@@ -156,7 +157,7 @@ body {
                     color: $mainBlue;
                     font-size: 3.2em;
                     font-weight: 700;
-               
+                    margin-top: 2.2rem;
                     .contactanosTextoSpan {
                         color: $mainOrange;
                         font-weight: 900;
@@ -165,11 +166,24 @@ body {
                 }
                 div {
                     display: flex;
+                    flex-wrap: nowrap;
+                    flex-direction: column;
                     justify-content: space-evenly;
                     margin-top: 10%;
+                    span {
+                        display: flex;
+                        flex-wrap: nowrap;
+                        color: #3E415C;
+                        font-weight: 500;
+                        font-size: 1.3em;
+                    .iconoRedes {
+                        width: 3rem;
+
+                    }
+                }
                 }
             }
-         
+        
         .fondoNaranja {
             background: $orangeI3;
             border-left: .5rem solid $mainOrange;
@@ -187,8 +201,11 @@ body {
 
 footer {
     display: flex;
-    flex-direction: column;
     background-color: $mainBlue;
+    justify-content:space-between;
+    .logoFooter {
+        width: 228px;
+    }
     nav {
         background-color: rgb(143, 141, 141);
         display: flex;

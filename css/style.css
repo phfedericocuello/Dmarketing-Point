@@ -195,6 +195,7 @@ body .acercaDe .prueba .contenido h3 {
 
 body .contacto {
   padding: 7%;
+  width: 100%;
 }
 
 body .contacto .carousel {
@@ -235,6 +236,7 @@ body .contacto .redes .contactanosTexto {
   color: #323852;
   font-size: 3.2em;
   font-weight: 700;
+  margin-top: 2.2rem;
 }
 
 body .contacto .redes .contactanosTexto .contactanosTextoSpan {
@@ -247,10 +249,31 @@ body .contacto .redes div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin-top: 10%;
+}
+
+body .contacto .redes div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  color: #3E415C;
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+body .contacto .redes div span .iconoRedes {
+  width: 3rem;
 }
 
 body .contacto .fondoNaranja {
@@ -269,11 +292,14 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: #323852;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .logoFooter {
+  width: 228px;
 }
 
 footer nav {
