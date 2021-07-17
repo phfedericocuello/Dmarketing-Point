@@ -1,5 +1,4 @@
 @import "fonts";
-
 * {
     margin: 0;
     padding: 0;
@@ -7,40 +6,6 @@
 }
 
 body {
-    header {
-        background-color: rgba(189, 187, 187, 1);
-        display: flex;
-        justify-content: space-around;
-        height: 8vh;
-        img {
-            padding: .5rem;
-            width: 15vw;
-            height: auto;
-        }
-        nav {
-            width: 40%;
-            align-items: center;
-            height: 100%;
-            display: flex;
-            ul {
-                display: flex;
-                justify-content: space-around;
-                list-style-type: none;
-                width: 100%;
-                li {
-                    margin-top: 1%;
-                    a {
-                        text-decoration: none;
-                        color: white;
-                        &:hover {
-                            color: grey;
-                            transition: .5s;
-                        }
-                    }
-                }
-            }
-        }
-    }
     .fondoasd {
         background-image: url(../media/fondo_1.png);
         background-size: cover;
@@ -50,18 +15,50 @@ body {
         max-height: 100vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        header {
+            display: flex;
+            justify-content: space-around;
+            height: 8vh;
+            img {
+                padding: .5rem;
+                width: 15vw;
+                height: auto;
+            }
+            nav {
+                width: 40%;
+                align-items: center;
+                height: 100%;
+                display: flex;
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+                    list-style-type: none;
+                    width: 100%;
+                    li {
+                        margin-top: 1%;
+                        a {
+                            text-decoration: none;
+                            color: white;
+                            &:hover {
+                                color: grey;
+                                transition: .5s;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .seccion1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        
-        .btn {
-            margin-top: 5%;
-            padding: 1rem;
-        }}
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 7%;
+            .btn {
+                margin-top: 5%;
+                padding: 1rem;
+            }
+        }
     }
     #servicios {
         display: flex;
@@ -94,16 +91,16 @@ body {
             background-image: url(../media/fondo_2.png);
             background-size: cover;
             height: 90vh;
-            width: 120vh;
+            width: 60%;
             flex-basis: 60%;
             position: absolute;
         }
         .prueba {
             flex-basis: 40%;
             .contenido {
-                margin-left: 100vh;
+                margin-left: 50%;
                 height: 55vh;
-                width: 75vh;
+                width: 55%;
                 background-color: white;
                 margin-top: 17vh;
                 position: absolute;
@@ -112,6 +109,7 @@ body {
                 flex-direction: column;
                 justify-content: space-evenly;
                 border-radius: 3%;
+                max-width: 40vw;
                 img {
                     height: auto;
                     width: 100%;
@@ -125,13 +123,12 @@ body {
     }
     .contacto {
         padding: 7%;
-        width:100%;
+        width: 100%;
         .carousel {
             width: 35rem;
             height: 30rem;
             position: relative;
             box-shadow: 0px 2px 9px 0px #A8A8B94D;
-
             right: 30%;
             .carousel-inner {
                 height: 100%;
@@ -150,59 +147,54 @@ body {
                 background: $whiteBackground;
             }
         }
-            .redes {
-                position: relative;
-                right: 28%;
-                .contactanosTexto {
-                    color: $mainBlue;
-                    font-size: 3.2em;
-                    font-weight: 700;
-                    margin-top: 2.2rem;
-                    .contactanosTextoSpan {
-                        color: $mainOrange;
-                        font-weight: 900;
-                        display: block;
-                    }
-                }
-                div {
-                    display: flex;
-                    flex-wrap: nowrap;
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    margin-top: 10%;
-                    span {
-                        display: flex;
-                        flex-wrap: nowrap;
-                        color: #3E415C;
-                        font-weight: 500;
-                        font-size: 1.3em;
-                    .iconoRedes {
-                        width: 3rem;
-
-                    }
-                }
+        .redes {
+            position: relative;
+            right: 28%;
+            .contactanosTexto {
+                color: $mainBlue;
+                font-size: 3.2em;
+                font-weight: 700;
+                margin-top: 2.2rem;
+                .contactanosTextoSpan {
+                    color: $mainOrange;
+                    font-weight: 900;
+                    display: block;
                 }
             }
-        
+            div {
+                display: flex;
+                flex-wrap: nowrap;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-top: 10%;
+                span {
+                    display: flex;
+                    flex-wrap: nowrap;
+                    color: #3E415C;
+                    font-weight: 500;
+                    font-size: 1.3em;
+                    .iconoRedes {
+                        width: 3rem;
+                    }
+                }
+            }
+        }
         .fondoNaranja {
             background: $orangeI3;
             border-left: .5rem solid $mainOrange;
-            height: 40%; 
+            height: 40%;
             display: flex;
-            width:65%;
+            width: 65%;
             margin-left: 30%;
             padding: 2rem;
-
         }
-    
     }
-
 }
 
 footer {
     display: flex;
     background-color: $mainBlue;
-    justify-content:space-between;
+    justify-content: space-between;
     .logoFooter {
         width: 228px;
     }
@@ -211,7 +203,6 @@ footer {
         display: flex;
         flex-direction: column;
         nav {
-            
             display: flex;
             justify-content: space-between;
             list-style-type: none;

@@ -5,58 +5,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body header {
-  background-color: #bdbbbb;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  height: 8vh;
-}
-
-body header img {
-  padding: .5rem;
-  width: 15vw;
-  height: auto;
-}
-
-body header nav {
-  width: 40%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  list-style-type: none;
-  width: 100%;
-}
-
-body header nav ul li {
-  margin-top: 1%;
-}
-
-body header nav ul li a {
-  text-decoration: none;
-  color: white;
-}
-
-body header nav ul li a:hover {
-  color: grey;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
 body .fondoasd {
   background-image: url(../media/fondo_1.png);
   background-size: cover;
@@ -71,12 +19,57 @@ body .fondoasd {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+body .fondoasd header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 8vh;
+}
+
+body .fondoasd header img {
+  padding: .5rem;
+  width: 15vw;
+  height: auto;
+}
+
+body .fondoasd header nav {
+  width: 40%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .fondoasd header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style-type: none;
+  width: 100%;
+}
+
+body .fondoasd header nav ul li {
+  margin-top: 1%;
+}
+
+body .fondoasd header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+body .fondoasd header nav ul li a:hover {
+  color: grey;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 body .fondoasd .seccion1 {
@@ -93,6 +86,7 @@ body .fondoasd .seccion1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 7%;
 }
 
 body .fondoasd .seccion1 .btn {
@@ -151,7 +145,7 @@ body .acercaDe .fondo {
   background-image: url(../media/fondo_2.png);
   background-size: cover;
   height: 90vh;
-  width: 120vh;
+  width: 60%;
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
   position: absolute;
@@ -163,9 +157,9 @@ body .acercaDe .prueba {
 }
 
 body .acercaDe .prueba .contenido {
-  margin-left: 100vh;
+  margin-left: 50%;
   height: 55vh;
-  width: 75vh;
+  width: 55%;
   background-color: white;
   margin-top: 17vh;
   position: absolute;
@@ -181,6 +175,7 @@ body .acercaDe .prueba .contenido {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   border-radius: 3%;
+  max-width: 40vw;
 }
 
 body .acercaDe .prueba .contenido img {
