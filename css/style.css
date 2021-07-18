@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 * {
-  margin: 0;
-  padding: 0;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -244,8 +242,6 @@ body .contacto .redes div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -257,18 +253,19 @@ body .contacto .redes div {
 }
 
 body .contacto .redes div span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
   color: #3E415C;
   font-weight: 500;
   font-size: 1.3em;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 body .contacto .redes div span .iconoRedes {
   width: 3rem;
+}
+
+body .contacto .redes div span p {
+  display: inline-block;
 }
 
 body .contacto .fondoNaranja {
@@ -283,54 +280,53 @@ body .contacto .fondoNaranja {
   padding: 2rem;
 }
 
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+body footer {
+  display: inline-block;
+  padding: 1.2rem;
   background-color: #323852;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
-footer .logoFooter {
-  width: 228px;
-}
-
-footer nav {
-  background-color: #8f8d8d;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-footer nav nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+body footer .row {
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  list-style-type: none;
-  width: 25%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-footer nav nav .footerNavItems:hover {
-  color: white;
+body footer .row .footerLogoContainer {
+  margin-left: 10%;
+  width: 100%;
+}
+
+body footer .row .footerLogoContainer .logoFooter {
+  width: 100%;
+}
+
+body footer .row nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+body footer .row nav ul li a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+body footer .row nav ul li a:hover {
+  color: #A8A8B9;
   -webkit-transition: .5s;
   transition: .5s;
   cursor: pointer;
 }
 
-footer span {
-  background-color: #bdbbbb;
-  text-align: center;
-  padding: .5rem;
+body footer .row span {
   font-size: .9em;
-  width: 100%;
+  color: #A8A8B9;
 }
 /*# sourceMappingURL=style.css.map */
