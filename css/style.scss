@@ -5,43 +5,60 @@
 
 body {
     .fondoasd {
-        background-image: url(../media/fondo_1.png);
+        background-image: url(../media/fondo_xxl.jpg);
         background-size: cover;
         width: 100%;
         color: white;
-        height: 80vh;
-        max-height: 100vh;
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         header {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             height: 8vh;
+            margin-top: .5rem;
             img {
                 padding: .5rem;
-                width: 15vw;
-                height: auto;
+                margin-left: 3.5rem;
+            
             }
             nav {
-                width: 40%;
+                width: 35%;
                 align-items: center;
                 height: 100%;
                 display: flex;
+                margin-right: 1rem;
                 ul {
                     display: flex;
                     justify-content: space-around;
                     list-style-type: none;
                     width: 100%;
+                    flex-wrap: nowrap;
                     li {
-                        margin-top: 1%;
+                        margin-right: 3.5rem;
                         a {
                             text-decoration: none;
-                            color: white;
+                            color: #ffff;
+                            font-size: 1.1em;
+                            font-weight: 300;
                             &:hover {
                                 color: grey;
                                 transition: .5s;
-                            }
+                            }    
                         }
+                            .nav-link-contactanos {
+                                padding-top: 0;
+                                .botonContactanos {
+                                    background: #56565B;
+                                    color: #FFFFFF;
+                                    padding: .4rem;
+                                    padding-left: 1.2rem;
+                                    padding-right: 1.2rem;
+                                    border: 1px solid #bbbbbb;
+                                }
+                            }
+                        
+                        
                     }
                 }
             }
@@ -51,10 +68,25 @@ body {
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin-top: 7%;
+            margin: auto;
+            width: 48%;
+            h1 { 
+                font-weight: 900;
+                font-size: 3.4em;
+                text-align: center;
+                strong {
+                    color: $mainOrange;
+                }
+            }
             .btn {
+                background-color: $mainOrange;
+                border: none;
                 margin-top: 5%;
-                padding: 1rem;
+                padding: .6rem;
+                color: #14162A;
+                font-weight: 500;
+                width: 11rem;
+                font-size: 20px;
             }
         }
     }
@@ -86,7 +118,7 @@ body {
         flex-direction: row;
         height: 100vh;
         .fondo {
-            background-image: url(../media/fondo_2.png);
+            background-image: url(../media/acercade_xxl.jpg);
             background-size: cover;
             height: 90vh;
             width: 60%;

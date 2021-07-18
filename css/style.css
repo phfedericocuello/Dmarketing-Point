@@ -4,12 +4,11 @@
 }
 
 body .fondoasd {
-  background-image: url(../media/fondo_1.png);
+  background-image: url(../media/fondo_xxl.jpg);
   background-size: cover;
   width: 100%;
   color: white;
-  height: 80vh;
-  max-height: 100vh;
+  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,19 +22,20 @@ body .fondoasd header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 8vh;
+  margin-top: .5rem;
 }
 
 body .fondoasd header img {
   padding: .5rem;
-  width: 15vw;
-  height: auto;
+  margin-left: 3.5rem;
 }
 
 body .fondoasd header nav {
-  width: 40%;
+  width: 35%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -43,6 +43,7 @@ body .fondoasd header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-right: 1rem;
 }
 
 body .fondoasd header nav ul {
@@ -53,21 +54,38 @@ body .fondoasd header nav ul {
       justify-content: space-around;
   list-style-type: none;
   width: 100%;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 body .fondoasd header nav ul li {
-  margin-top: 1%;
+  margin-right: 3.5rem;
 }
 
 body .fondoasd header nav ul li a {
   text-decoration: none;
-  color: white;
+  color: #ffff;
+  font-size: 1.1em;
+  font-weight: 300;
 }
 
 body .fondoasd header nav ul li a:hover {
   color: grey;
   -webkit-transition: .5s;
   transition: .5s;
+}
+
+body .fondoasd header nav ul li .nav-link-contactanos {
+  padding-top: 0;
+}
+
+body .fondoasd header nav ul li .nav-link-contactanos .botonContactanos {
+  background: #56565B;
+  color: #FFFFFF;
+  padding: .4rem;
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+  border: 1px solid #bbbbbb;
 }
 
 body .fondoasd .seccion1 {
@@ -84,12 +102,29 @@ body .fondoasd .seccion1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 7%;
+  margin: auto;
+  width: 48%;
+}
+
+body .fondoasd .seccion1 h1 {
+  font-weight: 900;
+  font-size: 3.4em;
+  text-align: center;
+}
+
+body .fondoasd .seccion1 h1 strong {
+  color: #FF9A51;
 }
 
 body .fondoasd .seccion1 .btn {
+  background-color: #FF9A51;
+  border: none;
   margin-top: 5%;
-  padding: 1rem;
+  padding: .6rem;
+  color: #14162A;
+  font-weight: 500;
+  width: 11rem;
+  font-size: 20px;
 }
 
 body #servicios {
@@ -140,7 +175,7 @@ body .acercaDe {
 }
 
 body .acercaDe .fondo {
-  background-image: url(../media/fondo_2.png);
+  background-image: url(../media/acercade_xxl.jpg);
   background-size: cover;
   height: 90vh;
   width: 60%;
