@@ -20,7 +20,6 @@ body {
             img {
                 padding: .5rem;
                 margin-left: 3.5rem;
-            
             }
             nav {
                 width: 35%;
@@ -44,21 +43,19 @@ body {
                             &:hover {
                                 color: grey;
                                 transition: .5s;
-                            }    
-                        }
-                            .nav-link-contactanos {
-                                padding-top: 0;
-                                .botonContactanos {
-                                    background: #56565B;
-                                    color: #FFFFFF;
-                                    padding: .4rem;
-                                    padding-left: 1.2rem;
-                                    padding-right: 1.2rem;
-                                    border: 1px solid #bbbbbb;
-                                }
                             }
-                        
-                        
+                        }
+                        .nav-link-contactanos {
+                            padding-top: 0;
+                            .botonContactanos {
+                                background: #56565B;
+                                color: #FFFFFF;
+                                padding: .4rem;
+                                padding-left: 1.2rem;
+                                padding-right: 1.2rem;
+                                border: 1px solid #bbbbbb;
+                            }
+                        }
                     }
                 }
             }
@@ -70,7 +67,7 @@ body {
             align-items: center;
             margin: auto;
             width: 48%;
-            h1 { 
+            h1 {
                 font-weight: 900;
                 font-size: 3.4em;
                 text-align: center;
@@ -101,16 +98,25 @@ body {
             .card {
                 position: relative;
                 top: -20vh;
+                border-radius: 2%;
                 img {
                     height: 20vh;
                     width: auto;
                 }
             }
         }
-        button {
+        .botonServicios {
             width: 13%;
             margin: auto;
             padding: .8rem;
+        }
+        p {
+            color: #3E415C;
+            font-weight: 500;
+            font-size: 1em;
+        }
+        .cardsCollapse {
+            margin-top: 7%;
         }
     }
     .acercaDe {
@@ -137,29 +143,39 @@ body {
                 padding: 5vh;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-evenly;
-                border-radius: 3%;
+                justify-content: center;
+                border-radius: 2%;
                 max-width: 40vw;
                 img {
                     height: auto;
                     width: 100%;
                 }
-                h3 {
-                    font-size: 150%;
-                    color: var(--naranja);
+                .AD-titulo {
+                    color: $mainOrange;
+                    font-weight: bold;
+                    font-size: 300%;
+                }
+                .AD-tituloMarca {
+                    color: $mainBlue;
+                    font-weight: bold;
+                    font-size: 400%;
+                }
+                p {
+                    color: $mainBlue;
+                    font-weight: 500;
+                    font-size: 1.3em;
                 }
             }
         }
     }
     .contacto {
         padding: 7%;
-        width:100%;
+        width: 100%;
         .carousel {
             width: 35rem;
             height: 30rem;
             position: relative;
             box-shadow: 0px 2px 9px 0px #A8A8B94D;
-
             right: 30%;
             .carousel-inner {
                 height: 100%;
@@ -178,99 +194,86 @@ body {
                 background: $whiteBackground;
             }
         }
-            .redes {
-                position: relative;
-                right: 28%;
-                .contactanosTexto {
-                    color: $mainBlue;
-                    font-size: 3.2em;
-                    font-weight: 700;
-                    margin-top: 2.2rem;
-                    .contactanosTextoSpan {
-                        color: $mainOrange;
-                        font-weight: 900;
-                        display: block;
-                    }
-                }
-                div {
-                    display: flex;
-                    
-                    flex-direction: column;
-                    justify-content: space-evenly;
-                    margin-top: 10%;
-                    span {
-                        color: #3E415C;
-                        font-weight: 500;
-                        font-size: 1.3em;
-                        flex-wrap: nowrap;
-
-                    .iconoRedes {
-                        width: 3rem;
-
-                    }
-                    p {
-                        display:inline-block;
-                    }
-                }
+        .redes {
+            position: relative;
+            right: 28%;
+            .contactanosTexto {
+                color: $mainBlue;
+                font-size: 3.2em;
+                font-weight: 700;
+                margin-top: 2.2rem;
+                .contactanosTextoSpan {
+                    color: $mainOrange;
+                    font-weight: 900;
+                    display: block;
                 }
             }
-        
+            div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                margin-top: 10%;
+                span {
+                    color: #3E415C;
+                    font-weight: 500;
+                    font-size: 1.3em;
+                    flex-wrap: nowrap;
+                    .iconoRedes {
+                        width: 3rem;
+                    }
+                    p {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
         .fondoNaranja {
             background: $orangeI3;
             border-left: .5rem solid $mainOrange;
-            height: 40%; 
+            height: 40%;
             display: flex;
-            width:65%;
+            width: 65%;
             margin-left: 30%;
             padding: 2rem;
-
         }
-    
     }
-
-
-
-footer {
-    display: inline-block;
-    padding: 1.2rem;
-    background-color: $mainBlue;
-    justify-content:space-between;
-    .row {
-        width: 100%;
+    footer {
+        display: inline-block;
+        padding: 1.2rem;
+        background-color: $mainBlue;
         justify-content: space-between;
-        align-items: center;
-        .footerLogoContainer {
-            margin-left: 10%;
+        .row {
             width: 100%;
-            .logoFooter {
+            justify-content: space-between;
+            align-items: center;
+            .footerLogoContainer {
+                margin-left: 10%;
                 width: 100%;
+                .logoFooter {
+                    width: 100%;
+                }
             }
-    }
-
-        nav {
-            ul {
-                list-style: none;
-                padding-left: 0;
-                li{
-                    
-                    a{
-                        text-decoration: none;
-                        color: #ffff;
-                        &:hover {
-                            color:#A8A8B9;
-                            transition: .5s;
-                            cursor: pointer;
+            nav {
+                ul {
+                    list-style: none;
+                    padding-left: 0;
+                    li {
+                        a {
+                            text-decoration: none;
+                            color: #ffff;
+                            &:hover {
+                                color: #A8A8B9;
+                                transition: .5s;
+                                cursor: pointer;
+                            }
                         }
                     }
                 }
-
+            }
+            span {
+                font-size: .9em;
+                color: #A8A8B9;
             }
         }
-    
-    span {
-        font-size: .9em;
-        color: #A8A8B9;
     }
-}
-}
 }
