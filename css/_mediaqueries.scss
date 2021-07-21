@@ -9,6 +9,39 @@
         display: none !important;
     }
     }
+
+    #servicios {
+        padding: 0;
+        height: 80vh;
+        .contenedorCards {
+            scroll-snap-type: x mandatory;
+            display: flex;
+            justify-content: flex-start !important;
+            width: 85% !important;
+            position: relative;
+            flex-wrap: nowrap;
+            height: auto ;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            margin: auto;
+            margin-top: 0;
+            margin-bottom: 2rem;
+            top:-20vh;
+            .card {
+                top: 0 !important;
+                scroll-snap-align: center;
+                flex: 0 0 100%;
+                object-fit: cover;
+                width: 100% !important;
+                height: 100%;
+            }
+        }
+        .botonServicios {
+            width: auto !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+    }
     #acercaDe {
         display: block;
         height: 100vh;
@@ -28,16 +61,26 @@
             padding: 1rem;
             width: 100%;
             background-color: rgba($color: #000000, $alpha: 0);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
             .AD-titulo {
                 font-size: 1.6em;
                 color: $mainOrange;
             }
             .AD-tituloMarca {
-                font-size: 1.5em;
+                font-size: 2.3em;
+                letter-spacing: 1.3px;
                 color: #ffff;
             }
             p{
                 color: #ffff;
+                font-weight: 200;
+                font-size: 1em;
+                text-align: justify;
+                margin-top: 2rem;
+ 
             }
         }
     }}

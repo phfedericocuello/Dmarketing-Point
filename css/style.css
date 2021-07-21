@@ -6,6 +6,47 @@
   header .headerNav {
     display: none !important;
   }
+  #servicios {
+    padding: 0;
+    height: 80vh;
+  }
+  #servicios .contenedorCards {
+    -ms-scroll-snap-type: x mandatory;
+        scroll-snap-type: x mandatory;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start !important;
+        -ms-flex-pack: start !important;
+            justify-content: flex-start !important;
+    width: 85% !important;
+    position: relative;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    height: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    top: -20vh;
+  }
+  #servicios .contenedorCards .card {
+    top: 0 !important;
+    scroll-snap-align: center;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100% !important;
+    height: 100%;
+  }
+  #servicios .botonServicios {
+    width: auto !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
   #acercaDe {
     display: block;
     height: 100vh;
@@ -30,17 +71,33 @@
     padding: 1rem;
     width: 100%;
     background-color: rgba(0, 0, 0, 0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 100%;
   }
   #acercaDe .containerContenido .contenido .AD-titulo {
     font-size: 1.6em;
     color: #FF9A51;
   }
   #acercaDe .containerContenido .contenido .AD-tituloMarca {
-    font-size: 1.5em;
+    font-size: 2.3em;
+    letter-spacing: 1.3px;
     color: #ffff;
   }
   #acercaDe .containerContenido .contenido p {
     color: #ffff;
+    font-weight: 200;
+    font-size: 1em;
+    text-align: justify;
+    margin-top: 2rem;
   }
   #contacto {
     padding: 0;
