@@ -1,12 +1,15 @@
 @import "fonts";
+@import "mediaqueries";
+
 * {
     font-family: 'Roboto', sans-serif;
 }
 
 body {
     .fondoasd {
-        background-image: url(../media/fondo_xxl.jpg);
+        background-image: url(../media/home.jpg);
         background-size: cover;
+        background-position: center;
         width: 100%;
         color: white;
         min-height: 100vh;
@@ -38,6 +41,7 @@ body {
                         a {
                             text-decoration: none;
                             color: #ffff;
+                            white-space: nowrap;
                             font-size: 1.1em;
                             font-weight: 300;
                             &:hover {
@@ -71,6 +75,7 @@ body {
                 font-weight: 900;
                 font-size: 3.4em;
                 text-align: center;
+                white-space: pre-line;
                 strong {
                     color: $mainOrange;
                 }
@@ -84,6 +89,10 @@ body {
                 font-weight: 500;
                 width: 11rem;
                 font-size: 20px;
+                a {
+                    text-decoration: none;
+                    color: $mainBlue;
+                }
             }
         }
     }
@@ -131,7 +140,7 @@ body {
             flex-basis: 60%;
             position: absolute;
         }
-        .prueba {
+        .containerContenido {
             flex-basis: 40%;
             .contenido {
                 margin-left: 50%;
@@ -177,9 +186,11 @@ body {
             position: relative;
             box-shadow: 0px 2px 9px 0px #A8A8B94D;
             right: 30%;
+            border-radius: 10px;
             .carousel-inner {
                 height: 100%;
                 background: $whiteBackground;
+                border-radius: 10px;
                 .carousel-item {
                     height: 100%;
                     img {
@@ -192,8 +203,9 @@ body {
             .carousel-control {
                 border: none;
                 background: $whiteBackground;
+                border-radius: 10px;
             }
-        }
+            }
         .redes {
             position: relative;
             right: 28%;
@@ -217,12 +229,14 @@ body {
                     color: #3E415C;
                     font-weight: 500;
                     font-size: 1.3em;
-                    flex-wrap: nowrap;
+                    display: flex;
+                    align-items:center;
+                    
                     .iconoRedes {
                         width: 3rem;
                     }
                     p {
-                        display: inline-block;
+                        font-size: initial;
                     }
                 }
             }
@@ -270,10 +284,11 @@ body {
                     }
                 }
             }
-            span {
+            .footerNavSpan {
                 font-size: .9em;
                 color: #A8A8B9;
             }
         }
     }
 }
+

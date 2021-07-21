@@ -1,11 +1,131 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@media (max-width: 890px) {
+  header img {
+    width: 30%;
+  }
+  header .headerNav {
+    display: none !important;
+  }
+  #acercaDe {
+    display: block;
+    height: 100vh;
+  }
+  #acercaDe .containerContenido {
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url(../media/acercade_xxl.jpg);
+    background-size: cover;
+  }
+  #acercaDe .containerContenido .contenido {
+    margin: 0;
+    padding: 0;
+    height: auto;
+    max-width: 100%;
+    padding: 1rem;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  #acercaDe .containerContenido .contenido .AD-titulo {
+    font-size: 1.6em;
+    color: #FF9A51;
+  }
+  #acercaDe .containerContenido .contenido .AD-tituloMarca {
+    font-size: 1.5em;
+    color: #ffff;
+  }
+  #acercaDe .containerContenido .contenido p {
+    color: #ffff;
+  }
+  #contacto {
+    padding: 0;
+  }
+  #contacto .fondoNaranja {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    border-top: 5px solid #FF9A51;
+    border-left: none;
+    width: 100%;
+    padding-bottom: 3rem;
+  }
+  #contacto .fondoNaranja .contactanosTexto {
+    padding-left: 2rem;
+    font-size: 1.5em;
+    color: #323852;
+    font-weight: 700;
+  }
+  #contacto .fondoNaranja .contactanosTexto .contactanosTextoSpan {
+    color: #FF9A51;
+    font-size: 1.8em;
+    margin-top: 2rem;
+  }
+  #contacto .fondoNaranja .carousel {
+    right: 0;
+    margin: auto;
+    margin-top: 2rem;
+    height: 35rem;
+    width: 80%;
+  }
+  #contacto .fondoNaranja .redes {
+    right: 0;
+    padding-left: 2rem;
+  }
+  #contacto .fondoNaranja .redes span {
+    margin-top: 1rem;
+  }
+  #contacto .fondoNaranja .redes span p {
+    margin: 0;
+    margin-left: 1rem;
+  }
+  footer .footerLogoContainer {
+    margin-left: 1% !important;
+    height: 5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .footerLogoContainer a {
+    height: 70%;
+  }
+  footer .footerLogoContainer a img {
+    height: 100%;
+    width: auto !important;
+  }
+  footer nav {
+    padding: 0 !important;
+  }
+  footer nav ul {
+    font-size: .9em;
+    margin-bottom: .5rem;
+  }
+  footer nav ul li {
+    text-align: end;
+  }
+  footer nav .footerNavSpan {
+    font-size: .8em !important;
+    text-align: end;
+    display: block;
+    width: 100%;
+  }
+}
+
 * {
   font-family: 'Roboto', sans-serif;
 }
 
 body .fondoasd {
-  background-image: url(../media/fondo_xxl.jpg);
+  background-image: url(../media/home.jpg);
   background-size: cover;
+  background-position: center;
   width: 100%;
   color: white;
   min-height: 100vh;
@@ -65,6 +185,7 @@ body .fondoasd header nav ul li {
 body .fondoasd header nav ul li a {
   text-decoration: none;
   color: #ffff;
+  white-space: nowrap;
   font-size: 1.1em;
   font-weight: 300;
 }
@@ -110,6 +231,7 @@ body .fondoasd .seccion1 h1 {
   font-weight: 900;
   font-size: 3.4em;
   text-align: center;
+  white-space: pre-line;
 }
 
 body .fondoasd .seccion1 h1 strong {
@@ -125,6 +247,11 @@ body .fondoasd .seccion1 .btn {
   font-weight: 500;
   width: 11rem;
   font-size: 20px;
+}
+
+body .fondoasd .seccion1 .btn a {
+  text-decoration: none;
+  color: #323852;
 }
 
 body #servicios {
@@ -195,12 +322,12 @@ body .acercaDe .fondo {
   position: absolute;
 }
 
-body .acercaDe .prueba {
+body .acercaDe .containerContenido {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
 }
 
-body .acercaDe .prueba .contenido {
+body .acercaDe .containerContenido .contenido {
   margin-left: 50%;
   height: 55vh;
   width: 55%;
@@ -222,24 +349,24 @@ body .acercaDe .prueba .contenido {
   max-width: 40vw;
 }
 
-body .acercaDe .prueba .contenido img {
+body .acercaDe .containerContenido .contenido img {
   height: auto;
   width: 100%;
 }
 
-body .acercaDe .prueba .contenido .AD-titulo {
+body .acercaDe .containerContenido .contenido .AD-titulo {
   color: #FF9A51;
   font-weight: bold;
   font-size: 300%;
 }
 
-body .acercaDe .prueba .contenido .AD-tituloMarca {
+body .acercaDe .containerContenido .contenido .AD-tituloMarca {
   color: #323852;
   font-weight: bold;
   font-size: 400%;
 }
 
-body .acercaDe .prueba .contenido p {
+body .acercaDe .containerContenido .contenido p {
   color: #323852;
   font-weight: 500;
   font-size: 1.3em;
@@ -257,11 +384,13 @@ body .contacto .carousel {
   -webkit-box-shadow: 0px 2px 9px 0px #A8A8B94D;
           box-shadow: 0px 2px 9px 0px #A8A8B94D;
   right: 30%;
+  border-radius: 10px;
 }
 
 body .contacto .carousel .carousel-inner {
   height: 100%;
   background: #FEFDFC;
+  border-radius: 10px;
 }
 
 body .contacto .carousel .carousel-inner .carousel-item {
@@ -277,6 +406,7 @@ body .contacto .carousel .carousel-inner .carousel-item img {
 body .contacto .carousel .carousel-control {
   border: none;
   background: #FEFDFC;
+  border-radius: 10px;
 }
 
 body .contacto .redes {
@@ -315,8 +445,12 @@ body .contacto .redes div span {
   color: #3E415C;
   font-weight: 500;
   font-size: 1.3em;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .contacto .redes div span .iconoRedes {
@@ -324,7 +458,7 @@ body .contacto .redes div span .iconoRedes {
 }
 
 body .contacto .redes div span p {
-  display: inline-block;
+  font-size: initial;
 }
 
 body .contacto .fondoNaranja {
@@ -384,7 +518,7 @@ body footer .row nav ul li a:hover {
   cursor: pointer;
 }
 
-body footer .row span {
+body footer .row .footerNavSpan {
   font-size: .9em;
   color: #A8A8B9;
 }

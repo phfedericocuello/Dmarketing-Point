@@ -16,7 +16,7 @@
     <div class="fondoasd">
         <header>
             <img src="media/logo 1.png" alt="logo">
-            <nav>
+            <nav class="headerNav">
                 <ul class="nav">
                     <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="#acercaDe">Acerca de</a></li>
@@ -26,7 +26,7 @@
         </header>
 
         <section class="seccion1">
-            <h1><strong>DMarketing Point</strong> la estrategia para tu proyecto</h1>
+            <h1><strong>DMarketing  Point</strong> la estrategia para tu proyecto</h1>
             <button class="btn btn-danger"> <a href="#contacto"> Contactanos </a>   </button>
         </section>
     </div>
@@ -142,19 +142,20 @@
     </section>
 
     <section class="acercaDe" id="acercaDe">
-        <div class="fondo"></div>
-        <div class="prueba">
-            <div class="contenido shadow-lg ">
-                <h4 class="AD-titulo">Acerca de</h4>
-                <h2 class="AD-tituloMarca">DMarketing Point</h2>
-                <p>El objetivo de la agencia DMarketing Point es convertirse en un partner estratégico de empresas, emprendedores y profesionales. Creemos en la planificación, en el planteo de objetivos y por sobre todas las cosas en el trabajo persistente
+            <div class="fondo d-none d-sm-block"></div>
+                <div class="containerContenido"> <!--va a contener la background-img de la version mobile y el texto-->
+                <div class="contenido shadow-lg"> <!--contiene el texto-->
+                    <h4 class="AD-titulo">Acerca de</h4>
+                    <h2 class="AD-tituloMarca">DMarketing Point</h2>
+                    <p>El objetivo de la agencia DMarketing Point es convertirse en un partner estratégico de empresas, emprendedores y profesionales. Creemos en la planificación, en el planteo de objetivos y por sobre todas las cosas en el trabajo persistente
                     para cumplir metas.
-                </p>
+                    </p>
+                </div>
             </div>
-        </div>
     </section>
     <section class="contacto" id="contacto">
-        <div class="fondoNaranja">
+        <div class="fondoNaranja d-flex  flex-column flex-md-row">
+            <h4 class="contactanosTexto d-md-none d-block"><span class="contactanosTextoSpan d-block">Contactanos</span> en nuestras redes sociales</h4> <!--Título para versión mobile-->
             <!-- carrusel con fotos de contacto -->
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -183,7 +184,7 @@
 
             <div class="redes">
 
-                <h4 class="contactanosTexto"><span class="contactanosTextoSpan">Contactanos</span> en nuestras redes sociales</h4>
+                <h4 class="contactanosTexto d-none d-md-block"><span class="contactanosTextoSpan">Contactanos</span> en nuestras redes sociales</h4>
                 <div>
                     <span><img src="media/instagram_icon.png" class="iconoRedes"><p> @agencia.dm.point</p></span>
                     <span><img src="media/facebook_icon.png" class="iconoRedes"><p> @agencia.dm.point</p></span>
@@ -196,17 +197,17 @@
     </section>
     <footer class="container-fluid">
         <div class="row">
-            <div class="footerLogoContainer col-2">
+            <div class="footerLogoContainer col-md-2 col-6">
                 <a href="#top"><img class="logoFooter" src="media/logo_4.png"></a>
             </div>
-            <nav class="col-3">
+            <nav class="col-md-3 col-5">
                 <ul class="d-flex-column">
                     <li class="footerNavItems"> <a href="#servicios">Servicios</a></li>
                     <li class="footerNavItems"> <a href="#acercaDe">Acerca de</a></li>
                     <li class="footerNavItems"> <a href="#contactos">Contacto</a></li>
                 </ul>
 
-                <span>2021 | Dmarketing Point</span>
+                <span class="footerNavSpan">2021 | Dmarketing Point</span>
             </nav>
         </div>
     </footer>

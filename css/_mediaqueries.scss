@@ -1,0 +1,120 @@
+//Movil
+
+@media (max-width: 890px) {  
+    header {
+        img {
+            width: 30%;
+        }
+        .headerNav {
+        display: none !important;
+    }
+    }
+    #acercaDe {
+        display: block;
+        height: 100vh;
+        .containerContenido {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            background-image: url(../media/acercade_xxl.jpg);
+            background-size: cover;
+        
+        .contenido {
+            margin: 0; 
+            padding: 0; 
+            height: auto;
+            max-width: 100%;
+            padding: 1rem;
+            width: 100%;
+            background-color: rgba($color: #000000, $alpha: 0);
+            .AD-titulo {
+                font-size: 1.6em;
+                color: $mainOrange;
+            }
+            .AD-tituloMarca {
+                font-size: 1.5em;
+                color: #ffff;
+            }
+            p{
+                color: #ffff;
+            }
+        }
+    }}
+    #contacto {
+        padding: 0;
+        .fondoNaranja {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            border-top: 5px solid $mainOrange;
+            border-left: none;
+            width: 100%;
+            padding-bottom: 3rem;
+            .contactanosTexto {
+                padding-left: 2rem;
+                font-size:1.5em;
+                color: $mainBlue;
+                font-weight: 700;
+                .contactanosTextoSpan {
+                    color: $mainOrange;
+                    font-size: 1.8em;
+                    margin-top: 2rem;
+                } 
+        }
+            .carousel {
+                right: 0;
+                margin: auto;
+                margin-top: 2rem;
+                height: 35rem;
+                width: 80%;
+               
+            }
+            .redes {
+                right: 0;
+                padding-left: 2rem;
+                span {
+                    margin-top: 1rem;
+                    p {
+                        margin: 0;
+                        margin-left: 1rem;
+                        
+                    }
+                }
+            }
+        }
+    }
+    footer {
+        .footerLogoContainer {
+            margin-left: 1% !important;
+            height: 5rem;
+            display: flex;
+            align-items: center;
+            a{
+                height: 70%;
+                img {
+                    height: 100%;
+                    width: auto !important;
+            }
+            }
+        }
+        nav {
+            padding: 0 !important;
+        ul {
+            font-size: .9em;
+            margin-bottom: .5rem;
+            li {
+                text-align: end;
+            }
+        }
+        .footerNavSpan {
+            font-size: .8em !important;
+            text-align: end;
+            display: block;
+            width: 100%;
+        }
+    }
+    }
+
+
+}
