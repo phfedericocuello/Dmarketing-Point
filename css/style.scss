@@ -101,6 +101,24 @@ body {
         flex-direction: column;
         max-width: 90vw;
         margin:auto;
+        .splide__arrows {
+            display:none;
+        }
+        .splide__slide {
+            width: 16rem !important;
+            .card {
+                img {
+                    height: 22vh;
+                }
+            }
+
+        }
+        .splide__track {
+            top: -24vh;
+        }
+        .splide__pagination__page {
+            display: none;
+        }
         .contenedorCards {
             display: flex;
             justify-content: space-around;
