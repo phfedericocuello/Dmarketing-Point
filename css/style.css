@@ -29,7 +29,7 @@
     margin: auto;
     margin-top: 0;
     margin-bottom: 2rem;
-    top: -20vh;
+    top: -10vh;
   }
   #servicios .contenedorCards .card {
     top: 0 !important;
@@ -105,7 +105,7 @@
   #contacto .fondoNaranja {
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
     border-top: 5px solid #FF9A51;
     border-left: none;
     width: 100%;
@@ -126,7 +126,7 @@
     right: 0;
     margin: auto;
     margin-top: 2rem;
-    height: 35rem;
+    height: 20rem;
     width: 80%;
   }
   #contacto .fondoNaranja .redes {
@@ -319,7 +319,8 @@ body #servicios {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-bottom: 5%;
+  max-width: 90vw;
+  margin: auto;
 }
 
 body #servicios .contenedorCards {
@@ -328,7 +329,6 @@ body #servicios .contenedorCards {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin-bottom: -5%;
 }
 
 body #servicios .contenedorCards .card {
@@ -345,12 +345,16 @@ body #servicios .contenedorCards .card img {
 body #servicios .botonServicios {
   width: 13%;
   margin: auto;
-  padding: .8rem;
+  padding: .3rem;
+  background-color: #FF9A51;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 600;
 }
 
 body #servicios p {
   color: #3E415C;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 1em;
 }
 

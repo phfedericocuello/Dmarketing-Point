@@ -99,11 +99,11 @@ body {
     #servicios {
         display: flex;
         flex-direction: column;
-        margin-bottom: 5%;
+        max-width: 90vw;
+        margin:auto;
         .contenedorCards {
             display: flex;
             justify-content: space-around;
-            margin-bottom: -5%;
             .card {
                 position: relative;
                 top: -20vh;
@@ -117,11 +117,15 @@ body {
         .botonServicios {
             width: 13%;
             margin: auto;
-            padding: .8rem;
+            padding: .3rem;
+            background-color: $mainOrange;
+            margin-bottom: 2rem;
+            text-align:center;
+            font-weight: 600;
         }
         p {
             color: #3E415C;
-            font-weight: 500;
+            font-weight: 700;
             font-size: 1em;
         }
         .cardsCollapse {
