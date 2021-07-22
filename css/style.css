@@ -81,7 +81,7 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    background-image: url(../media/acercade_xxl.jpg);
+    background-image: url(../media/acercade-s.jpg);
     background-size: cover;
   }
   #acercaDe .containerContenido .contenido {
@@ -420,7 +420,7 @@ body .acercaDe {
 }
 
 body .acercaDe .fondo {
-  background-image: url(../media/acercade_xxl.jpg);
+  background-image: url(../media/acercade-xl.png);
   background-size: cover;
   height: 90vh;
   width: 60%;
