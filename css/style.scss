@@ -1,6 +1,5 @@
 @import "fonts";
 @import "mediaqueries";
-
 * {
     font-family: 'Roboto', sans-serif;
 }
@@ -79,6 +78,9 @@ body {
                 strong {
                     color: $mainOrange;
                 }
+                br {
+                    display: none;
+                }
             }
             .btn {
                 background-color: $mainOrange;
@@ -100,9 +102,9 @@ body {
         display: flex;
         flex-direction: column;
         max-width: 90vw;
-        margin:auto;
+        margin: auto;
         .splide__arrows {
-            display:none;
+            display: none;
         }
         .splide__slide {
             width: 16rem !important;
@@ -111,7 +113,6 @@ body {
                     height: 22vh;
                 }
             }
-
         }
         .splide__track {
             top: -24vh;
@@ -138,7 +139,7 @@ body {
             padding: .3rem;
             background-color: $mainOrange;
             margin-bottom: 2rem;
-            text-align:center;
+            text-align: center;
             font-weight: 600;
         }
         p {
@@ -227,7 +228,7 @@ body {
                 background: $whiteBackground;
                 border-radius: 10px;
             }
-            }
+        }
         .redes {
             position: relative;
             right: 28%;
@@ -252,8 +253,7 @@ body {
                     font-weight: 500;
                     font-size: 1.3em;
                     display: flex;
-                    align-items:center;
-                    
+                    align-items: center;
                     .iconoRedes {
                         width: 3rem;
                     }
@@ -313,4 +313,3 @@ body {
         }
     }
 }
-

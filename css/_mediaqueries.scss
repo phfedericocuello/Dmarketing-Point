@@ -1,31 +1,35 @@
 //Movil
-
-@media (max-width: 890px) {  
+@media (max-width: 890px) {
     header {
         img {
             width: 30%;
         }
         .headerNav {
-        display: none !important;
-    }
+            display: none !important;
+        }
     }
     .fondoasd {
-        height: 120vh;
+        height: 100vh;
         .seccion1 {
             height: 100vh;
             margin: 0 !important;
+            width: 100% !important;
             h1 {
-            font-size: 2em !important;
-            line-height: 1.3;
-            font-weight: 500 !important;
+                font-size: 2em !important;
+                line-height: 1.3;
+                font-weight: 500 !important;
+                br {
+                    display: block !important;
+                }
+            }
         }
-    }
     }
     #servicios {
         padding: 1rem;
-        min-height: 100vh;
+        min-height: 50vh;
+        max-height: 50vh;
         .mobileCard {
-            height: 90vh;
+            height: 65vh;
         }
         .contenedorCards {
             scroll-snap-type: x mandatory;
@@ -34,13 +38,13 @@
             width: 85% !important;
             position: relative;
             flex-wrap: nowrap;
-            height: auto ;
+            height: auto;
             overflow-x: scroll;
             overflow-y: hidden;
             margin: auto;
             margin-top: 0;
             margin-bottom: 2rem;
-            top:-10vh;
+            top: -10vh;
             .card {
                 top: 0 !important;
                 scroll-snap-align: center;
@@ -54,6 +58,7 @@
             width: auto !important;
             margin-top: 0 !important;
             margin-bottom: 0 !important;
+            display: none;
         }
     }
     #acercaDe {
@@ -66,38 +71,37 @@
             justify-content: center;
             background-image: url(../media/acercade_xxl.jpg);
             background-size: cover;
-        
-        .contenido {
-            margin: 0; 
-            padding: 0; 
-            height: auto;
-            max-width: 100%;
-            padding: 1rem;
-            width: 100%;
-            background-color: rgba($color: #000000, $alpha: 0);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-            .AD-titulo {
-                font-size: 1.6em;
-                color: $mainOrange;
-            }
-            .AD-tituloMarca {
-                font-size: 2.3em;
-                letter-spacing: 1.3px;
-                color: #ffff;
-            }
-            p{
-                color: #ffff;
-                font-weight: 200;
-                font-size: 1em;
-                text-align: justify;
-                margin-top: 2rem;
- 
+            .contenido {
+                margin: 0;
+                padding: 0;
+                height: auto;
+                max-width: 100%;
+                padding: 1rem;
+                width: 100%;
+                background-color: rgba($color: #000000, $alpha: 0);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: 100%;
+                .AD-titulo {
+                    font-size: 1.6em;
+                    color: $mainOrange;
+                }
+                .AD-tituloMarca {
+                    font-size: 2.3em;
+                    letter-spacing: 1.3px;
+                    color: #ffff;
+                }
+                p {
+                    color: #ffff;
+                    font-weight: 200;
+                    font-size: 1em;
+                    text-align: justify;
+                    margin-top: 2rem;
+                }
             }
         }
-    }}
+    }
     #contacto {
         padding: 0;
         .fondoNaranja {
@@ -110,22 +114,21 @@
             padding-bottom: 3rem;
             .contactanosTexto {
                 padding-left: 2rem;
-                font-size:1.5em;
+                font-size: 1.5em;
                 color: $mainBlue;
                 font-weight: 700;
                 .contactanosTextoSpan {
                     color: $mainOrange;
                     font-size: 1.8em;
                     margin-top: 2rem;
-                } 
-        }
+                }
+            }
             .carousel {
                 right: 0;
                 margin: auto;
                 margin-top: 2rem;
                 height: 20rem;
                 width: 80%;
-               
             }
             .redes {
                 right: 0;
@@ -135,7 +138,7 @@
                     p {
                         margin: 0;
                         margin-left: 1rem;
-                        
+                        font-size: 60%;
                     }
                 }
             }
@@ -147,31 +150,29 @@
             height: 5rem;
             display: flex;
             align-items: center;
-            a{
+            a {
                 height: 70%;
                 img {
                     height: 100%;
                     width: auto !important;
-            }
+                }
             }
         }
         nav {
             padding: 0 !important;
-        ul {
-            font-size: .9em;
-            margin-bottom: .5rem;
-            li {
+            ul {
+                font-size: .9em;
+                margin-bottom: .5rem;
+                li {
+                    text-align: end;
+                }
+            }
+            .footerNavSpan {
+                font-size: .8em !important;
                 text-align: end;
+                display: block;
+                width: 100%;
             }
         }
-        .footerNavSpan {
-            font-size: .8em !important;
-            text-align: end;
-            display: block;
-            width: 100%;
-        }
     }
-    }
-
-
 }
