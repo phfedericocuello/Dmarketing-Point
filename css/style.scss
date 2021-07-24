@@ -30,7 +30,7 @@ body {
                 margin-right: 1rem; */
                 
 
-                img {
+                .logo {
                 padding: .5rem;
                 margin-left: 3.5rem;
                 width: 10vw;
@@ -140,13 +140,16 @@ body {
             }
         }
         .botonServicios {
-            width: 13%;
+            width: 13rem;
             margin: auto;
             padding: .3rem;
             background-color: $mainOrange;
             margin-bottom: 2rem;
             text-align: center;
             font-weight: 600;
+            a {
+                width: 100% !important;
+            }
         }
         p {
             color: #3E415C;

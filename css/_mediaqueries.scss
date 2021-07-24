@@ -1,15 +1,12 @@
 //Movil
 @media (max-width: 890px) {
-    header {
-        img {
-            width: 30%;
-        }
-        .headerNav {
-            display: none !important;
-        }
-    }
     .fondoasd {
         height: 100vh;
+        .logo {
+            padding: 0 !important;
+            margin: 0 !important;
+            
+        }
         .seccion1 {
             height: 100vh;
             margin: 0 !important;

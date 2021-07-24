@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @media (max-width: 890px) {
-  header img {
-    width: 30%;
-  }
-  header .headerNav {
-    display: none !important;
-  }
   .fondoasd {
     height: 100vh;
+  }
+  .fondoasd .logo {
+    padding: 0 !important;
+    margin: 0 !important;
   }
   .fondoasd .seccion1 {
     height: 100vh;
@@ -242,7 +240,7 @@ body .fondoasd header nav {
                 margin-right: 1rem; */
 }
 
-body .fondoasd header nav img {
+body .fondoasd header nav .logo {
   padding: .5rem;
   margin-left: 3.5rem;
   width: 10vw;
@@ -393,13 +391,17 @@ body #servicios .contenedorCards .card img {
 }
 
 body #servicios .botonServicios {
-  width: 13%;
+  width: 13rem;
   margin: auto;
   padding: .3rem;
   background-color: #FF9A51;
   margin-bottom: 2rem;
   text-align: center;
   font-weight: 600;
+}
+
+body #servicios .botonServicios a {
+  width: 100% !important;
 }
 
 body #servicios p {
