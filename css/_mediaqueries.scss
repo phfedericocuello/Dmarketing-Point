@@ -1,5 +1,28 @@
 //Movil
-@media (max-width: 890px) {
+@media (max-width: 650px) {
+    header {
+        img {
+            width: 30%;
+        }
+        .navbar-toggler-icon {
+            position: absolute ;
+            top: 3px;
+            right: 5px;
+        }
+        .navbar-collapse {
+            width: 100%;
+            li {
+                text-align: center;
+                font-size: 1em;
+                button {
+                    background: none !important;
+                    border: none !important;
+                    font-weight: 200 !important;
+                }
+            }
+
+        }
+    }
     .fondoasd {
         height: 100vh;
         .logo {
@@ -169,6 +192,62 @@
                 text-align: end;
                 display: block;
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media (min-width: 651px) {
+    .fondoasd {
+        .seccion1 {
+            h1 {
+                margin-top: -50%;
+                font-size: 2.5rem;
+            }
+        }
+    }
+    #servicios {
+        .contenedorCards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .collapse {
+            .contenedorCards {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+        }
+    }
+    .acercaDe {
+        margin-top: 10%;
+        .containerContenido {
+            .contenido {
+                margin-left: 30%;
+                max-width: 60vw;
+                .AD-titulo {
+                    font-size: 250%;
+                }
+                .AD-tituloMarca {
+                    font-size: 299%;
+                }
+            }
+        }
+    }
+    .contacto {
+        .fondoNaranja {
+            width: 80%;
+            margin-left: 15%;
+        }
+    }
+    footer {
+        .row {
+            .footerLogoContainer {
+                .logoFooter {
+                    width: 150%;
+                    height: auto;
+                }
             }
         }
     }
