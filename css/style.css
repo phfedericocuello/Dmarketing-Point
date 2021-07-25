@@ -1,24 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @media (max-width: 650px) {
+  header {
+    /*     .navbar-toggler-icon {
+            position: absolute ;
+            top: 3px;
+            right: 5px;
+        }*/
+  }
   header img {
     width: 30%;
-  }
-  header .navbar-toggler-icon {
-    position: absolute;
-    top: 3px;
-    right: 5px;
   }
   header .navbar-collapse {
     width: 100%;
   }
-  header .navbar-collapse li {
-    text-align: center;
-    font-size: 1em;
+  header .navbar-collapse ul {
+    margin: 0 !important;
+    background: rgba(235, 235, 243, 0.1);
   }
-  header .navbar-collapse li button {
+  header .navbar-collapse ul li {
+    text-align: center;
+    font-size: .95em;
+    margin-right: 0 !important;
+    color: #FDF9F4;
+  }
+  header .navbar-collapse ul li a {
+    padding: 0;
+    display: inline-block;
+  }
+  header .navbar-collapse ul li a .botonContacto {
     background: none !important;
     border: none !important;
     font-weight: 200 !important;
+  }
+  header .navbar-collapse ul li .borderBottom {
+    width: 5rem;
+    border-bottom: 2px solid rgba(168, 168, 185, 0.3);
   }
   .fondoasd {
     height: 100vh;
@@ -298,22 +314,17 @@ body .fondoasd header nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  /*align-items: center;
-                height: 100%;
-                
-                margin-right: 1rem; */
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  margin-right: 1rem;
 }
 
-body .fondoasd header nav img {
+body .fondoasd header nav .logo {
   padding: .5rem;
   margin-left: 3.5rem;
   width: 10vw;
-}
-
-body .fondoasd header nav .navbar-toggler-icon {
-  position: absolute;
-  top: 3px;
-  right: 5px;
 }
 
 body .fondoasd header nav ul {
@@ -347,11 +358,7 @@ body .fondoasd header nav ul li a:hover {
   transition: .5s;
 }
 
-body .fondoasd header nav ul li .nav-link-contactanos {
-  padding-top: 0;
-}
-
-body .fondoasd header nav ul li .nav-link-contactanos .botonContactanos {
+body .fondoasd header nav ul li .botonContacto {
   background: #56565B;
   color: #FFFFFF;
   padding: .4rem;
@@ -360,7 +367,7 @@ body .fondoasd header nav ul li .nav-link-contactanos .botonContactanos {
   border: 1px solid #bbbbbb;
 }
 
-body .fondoasd .seccion1 {
+body .seccion1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -378,22 +385,22 @@ body .fondoasd .seccion1 {
   width: 48%;
 }
 
-body .fondoasd .seccion1 h1 {
+body .seccion1 h1 {
   font-weight: 900;
   font-size: 3.4em;
   text-align: center;
   white-space: pre-line;
 }
 
-body .fondoasd .seccion1 h1 strong {
+body .seccion1 h1 strong {
   color: #FF9A51;
 }
 
-body .fondoasd .seccion1 h1 br {
+body .seccion1 h1 br {
   display: none;
 }
 
-body .fondoasd .seccion1 .btn {
+body .seccion1 .btn {
   background-color: #FF9A51;
   border: none;
   margin-top: 5%;
@@ -404,12 +411,12 @@ body .fondoasd .seccion1 .btn {
   font-size: 20px;
 }
 
-body .fondoasd .seccion1 .btn a {
+body .seccion1 .btn a {
   text-decoration: none;
   color: #323852;
 }
 
-body #servicios {
+#servicios {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -421,27 +428,27 @@ body #servicios {
   margin: auto;
 }
 
-body #servicios .splide__arrows {
+#servicios .splide__arrows {
   display: none;
 }
 
-body #servicios .splide__slide {
+#servicios .splide__slide {
   width: 16rem !important;
 }
 
-body #servicios .splide__slide .card img {
+#servicios .splide__slide .card img {
   height: 22vh;
 }
 
-body #servicios .splide__track {
+#servicios .splide__track {
   top: -24vh;
 }
 
-body #servicios .splide__pagination__page {
+#servicios .splide__pagination__page {
   display: none;
 }
 
-body #servicios .contenedorCards {
+#servicios .contenedorCards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -449,18 +456,18 @@ body #servicios .contenedorCards {
       justify-content: space-around;
 }
 
-body #servicios .contenedorCards .card {
+#servicios .contenedorCards .card {
   position: relative;
   top: -20vh;
   border-radius: 2%;
 }
 
-body #servicios .contenedorCards .card img {
+#servicios .contenedorCards .card img {
   height: 20vh;
   width: auto;
 }
 
-body #servicios .botonServicios {
+#servicios .botonServicios {
   width: 13rem;
   margin: auto;
   padding: .3rem;
@@ -470,21 +477,21 @@ body #servicios .botonServicios {
   font-weight: 600;
 }
 
-body #servicios .botonServicios a {
+#servicios .botonServicios a {
   width: 100% !important;
 }
 
-body #servicios p {
+#servicios p {
   color: #3E415C;
   font-weight: 700;
   font-size: 1em;
 }
 
-body #servicios .cardsCollapse {
+#servicios .cardsCollapse {
   margin-top: 7%;
 }
 
-body .acercaDe {
+.acercaDe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,7 +502,7 @@ body .acercaDe {
   height: 100vh;
 }
 
-body .acercaDe .fondo {
+.acercaDe .fondo {
   background-image: url(../media/acercade-xl.png);
   background-size: cover;
   height: 90vh;
@@ -505,12 +512,12 @@ body .acercaDe .fondo {
   position: absolute;
 }
 
-body .acercaDe .containerContenido {
+.acercaDe .containerContenido {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
 }
 
-body .acercaDe .containerContenido .contenido {
+.acercaDe .containerContenido .contenido {
   margin-left: 50%;
   height: 55vh;
   width: 55%;
@@ -532,35 +539,35 @@ body .acercaDe .containerContenido .contenido {
   max-width: 40vw;
 }
 
-body .acercaDe .containerContenido .contenido img {
+.acercaDe .containerContenido .contenido img {
   height: auto;
   width: 100%;
 }
 
-body .acercaDe .containerContenido .contenido .AD-titulo {
+.acercaDe .containerContenido .contenido .AD-titulo {
   color: #FF9A51;
   font-weight: bold;
   font-size: 300%;
 }
 
-body .acercaDe .containerContenido .contenido .AD-tituloMarca {
+.acercaDe .containerContenido .contenido .AD-tituloMarca {
   color: #323852;
   font-weight: bold;
   font-size: 400%;
 }
 
-body .acercaDe .containerContenido .contenido p {
+.acercaDe .containerContenido .contenido p {
   color: #323852;
   font-weight: 500;
   font-size: 1.3em;
 }
 
-body .contacto {
+.contacto {
   padding: 7%;
   width: 100%;
 }
 
-body .contacto .carousel {
+.contacto .carousel {
   width: 35rem;
   height: 30rem;
   position: relative;
@@ -570,47 +577,47 @@ body .contacto .carousel {
   border-radius: 10px;
 }
 
-body .contacto .carousel .carousel-inner {
+.contacto .carousel .carousel-inner {
   height: 100%;
   background: #FEFDFC;
   border-radius: 10px;
 }
 
-body .contacto .carousel .carousel-inner .carousel-item {
+.contacto .carousel .carousel-inner .carousel-item {
   height: 100%;
 }
 
-body .contacto .carousel .carousel-inner .carousel-item img {
+.contacto .carousel .carousel-inner .carousel-item img {
   height: inherit;
   margin: auto;
   padding: 1rem;
 }
 
-body .contacto .carousel .carousel-control {
+.contacto .carousel .carousel-control {
   border: none;
   background: #FEFDFC;
   border-radius: 10px;
 }
 
-body .contacto .redes {
+.contacto .redes {
   position: relative;
   right: 28%;
 }
 
-body .contacto .redes .contactanosTexto {
+.contacto .redes .contactanosTexto {
   color: #323852;
   font-size: 3.2em;
   font-weight: 700;
   margin-top: 2.2rem;
 }
 
-body .contacto .redes .contactanosTexto .contactanosTextoSpan {
+.contacto .redes .contactanosTexto .contactanosTextoSpan {
   color: #FF9A51;
   font-weight: 900;
   display: block;
 }
 
-body .contacto .redes div {
+.contacto .redes div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -624,7 +631,7 @@ body .contacto .redes div {
   margin-top: 10%;
 }
 
-body .contacto .redes div span {
+.contacto .redes div span {
   color: #3E415C;
   font-weight: 500;
   font-size: 1.3em;
@@ -636,15 +643,15 @@ body .contacto .redes div span {
           align-items: center;
 }
 
-body .contacto .redes div span .iconoRedes {
+.contacto .redes div span .iconoRedes {
   width: 3rem;
 }
 
-body .contacto .redes div span p {
+.contacto .redes div span p {
   font-size: initial;
 }
 
-body .contacto .fondoNaranja {
+.contacto .fondoNaranja {
   background: #F9E8D4;
   border-left: 0.5rem solid #FF9A51;
   height: 40%;
@@ -656,7 +663,7 @@ body .contacto .fondoNaranja {
   padding: 2rem;
 }
 
-body footer {
+footer {
   display: inline-block;
   padding: 1.2rem;
   background-color: #323852;
@@ -665,7 +672,7 @@ body footer {
           justify-content: space-between;
 }
 
-body footer .row {
+footer .row {
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -675,33 +682,33 @@ body footer .row {
           align-items: center;
 }
 
-body footer .row .footerLogoContainer {
+footer .row .footerLogoContainer {
   margin-left: 10%;
   width: 100%;
 }
 
-body footer .row .footerLogoContainer .logoFooter {
+footer .row .footerLogoContainer .logoFooter {
   width: 100%;
 }
 
-body footer .row nav ul {
+footer .row nav ul {
   list-style: none;
   padding-left: 0;
 }
 
-body footer .row nav ul li a {
+footer .row nav ul li a {
   text-decoration: none;
   color: #ffff;
 }
 
-body footer .row nav ul li a:hover {
+footer .row nav ul li a:hover {
   color: #A8A8B9;
   -webkit-transition: .5s;
   transition: .5s;
   cursor: pointer;
 }
 
-body footer .row .footerNavSpan {
+footer .row .footerNavSpan {
   font-size: .9em;
   color: #A8A8B9;
 }
