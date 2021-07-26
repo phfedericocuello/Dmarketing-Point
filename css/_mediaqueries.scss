@@ -4,11 +4,6 @@
         img {
             width: 30%;
         }
-   /*     .navbar-toggler-icon {
-            position: absolute ;
-            top: 3px;
-            right: 5px;
-        }*/
         .navbar-collapse {
             width: 100%;
             ul {
@@ -24,20 +19,28 @@
                     padding: 0;
                     display: inline-block;
                     
-                .botonContacto {
+                
+            }
+            
+            .botonContacto {
                     background: none !important;
                     border: none !important;
                     font-weight: 200 !important;
+                    padding: 0 !important;
                 }
-            }
             .borderBottom {
                     width: 5rem;
                     border-bottom: 2px solid rgba(168, 168, 185, .3);
                 }
             }
+            
             }
+           
 
-        }
+        } 
+        .menuHamburguesa {
+                color:#FDF9F4;
+            }
     }
     .fondoasd {
         height: 100vh;
