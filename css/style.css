@@ -1,40 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
 @media (max-width: 650px) {
-  header img {
+  .fondoasd {
+    height: 130vh;
+    background-image: url(../media/fondo_s.jpg) !important;
+  }
+  .fondoasd header img {
     width: 30%;
   }
-  header .navbar-collapse {
+  .fondoasd header .navbar-brand {
+    width: 8vw;
+  }
+  .fondoasd header .navbar-brand .logoMobile {
     width: 100%;
   }
-  header .navbar-collapse ul {
+  .fondoasd header .navbar-collapse {
+    width: 100%;
+  }
+  .fondoasd header .navbar-collapse ul {
     margin: 0 !important;
     background: rgba(235, 235, 243, 0.1);
   }
-  header .navbar-collapse ul li {
+  .fondoasd header .navbar-collapse ul li {
     text-align: center;
     font-size: .95em;
     margin-right: 0 !important;
     color: #FDF9F4;
   }
-  header .navbar-collapse ul li a {
+  .fondoasd header .navbar-collapse ul li a {
     padding: 0;
     display: inline-block;
   }
-  header .navbar-collapse ul li .botonContacto {
+  .fondoasd header .navbar-collapse ul li .botonContacto {
     background: none !important;
     border: none !important;
     font-weight: 200 !important;
     padding: 0 !important;
   }
-  header .navbar-collapse ul li .borderBottom {
+  .fondoasd header .navbar-collapse ul li .borderBottom {
     width: 5rem;
     border-bottom: 2px solid rgba(168, 168, 185, 0.3);
   }
-  header .menuHamburguesa {
+  .fondoasd header .menuHamburguesa {
     color: #FDF9F4;
-  }
-  .fondoasd {
-    height: 100vh;
+    font-size: 1.2em;
   }
   .fondoasd .logo {
     padding: 0 !important;
