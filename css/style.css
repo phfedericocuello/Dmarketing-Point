@@ -238,7 +238,6 @@
 
 @media (min-width: 651px) {
   .fondoasd .seccion1 h1 {
-    margin-top: -50%;
     font-size: 2.5rem;
   }
   #servicios .contenedorCards {
@@ -398,6 +397,7 @@ body .seccion1 h1 {
   font-size: 3.4em;
   text-align: center;
   white-space: pre-line;
+  margin-top: 1.5rem;
 }
 
 body .seccion1 h1 strong {
@@ -433,6 +433,7 @@ body .seccion1 .btn a {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 90vw;
+  height: 80vh;
   margin: auto;
 }
 
@@ -467,12 +468,24 @@ body .seccion1 .btn a {
 #servicios .contenedorCards .card {
   position: relative;
   top: -20vh;
+  height: 125%;
   border-radius: 2%;
 }
 
 #servicios .contenedorCards .card img {
   height: 20vh;
   width: auto;
+}
+
+#servicios .contenedorCards .card .card-title {
+  color: #323852;
+  font-size: 1.6em;
+  padding: 1rem;
+}
+
+#servicios .contenedorCards .card .card-text {
+  color: rgba(109, 109, 144, 0.8);
+  padding: 1rem;
 }
 
 #servicios .botonServicios {
@@ -482,11 +495,14 @@ body .seccion1 .btn a {
   background-color: #FF9A51;
   margin-bottom: 2rem;
   text-align: center;
+  color: #14162A;
   font-weight: 600;
 }
 
 #servicios .botonServicios a {
   width: 100% !important;
+  font-size: 1.2em;
+  font-weight: 400;
 }
 
 #servicios p {

@@ -83,6 +83,7 @@ body {
                 font-size: 3.4em;
                 text-align: center;
                 white-space: pre-line;
+                margin-top: 1.5rem;
                 strong {
                     color: $mainOrange;
                 }
@@ -110,6 +111,7 @@ body {
         display: flex;
         flex-direction: column;
         max-width: 90vw;
+        height:80vh;
         margin: auto;
         .splide__arrows {
             display: none;
@@ -134,10 +136,20 @@ body {
             .card {
                 position: relative;
                 top: -20vh;
+                height: 125%;
                 border-radius: 2%;
                 img {
                     height: 20vh;
                     width: auto;
+                }
+                .card-title {
+                    color: #323852;
+                    font-size: 1.6em;
+                    padding: 1rem;
+                }
+                .card-text {
+                    color: rgba(109, 109, 144, .8);
+                    padding: 1rem;
                 }
             }
         }
@@ -148,9 +160,12 @@ body {
             background-color: $mainOrange;
             margin-bottom: 2rem;
             text-align: center;
+            color: #14162A;
             font-weight: 600;
             a {
                 width: 100% !important;
+                font-size: 1.2em;
+                font-weight: 400;
             }
         }
         p {
