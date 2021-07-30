@@ -357,7 +357,7 @@ body .fondoasd header nav ul li a {
 }
 
 body .fondoasd header nav ul li a:hover {
-  background: grey;
+  color: grey;
   -webkit-transition: .5s;
   transition: .5s;
 }
@@ -365,9 +365,9 @@ body .fondoasd header nav ul li a:hover {
 body .fondoasd header nav ul li .botonContacto {
   background: #56565B;
   color: #FDF9F4;
-  padding: .6rem;
+  padding: .7rem;
   border-radius: 5%;
-  line-height: 1em;
+  line-height: 1.1em;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   font-size: 1em;

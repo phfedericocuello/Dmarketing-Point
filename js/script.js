@@ -7,10 +7,10 @@ let aBotonServicios = document.getElementById("aBotonServicios");
 
 const cambiar = () => {
     if (masServicios == true) {
-    aBotonServicios.innerHTML = "VER MENOS SERVICIOS";
+    aBotonServicios.innerHTML = "Ver menos servicios";
     masServicios = false;
 }else {
-    aBotonServicios.innerHTML = "VER MÁS SERVICIOS";
+    aBotonServicios.innerHTML = "Ver más servicios";
     masServicios = true;
 
 }
