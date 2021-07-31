@@ -236,42 +236,52 @@
   }
 }
 
-@media (min-width: 651px) {
+@media (min-width: 720px) and (max-width: 900px) {
+  header .navbar-nav {
+    text-align: center;
+  }
   .fondoasd .seccion1 h1 {
     font-size: 2.5rem;
   }
-  #servicios .contenedorCards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  #servicios .splide {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
-  #servicios .collapse .contenedorCards {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 20px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+  #servicios .splide .card {
+    min-height: 600px;
+  }
+  #servicios .splide__track {
+    top: -22.1vh !important;
+  }
+  #servicios .contenedorCards {
+    display: none !important;
+  }
+  #servicios .botonServicios {
+    display: none !important;
   }
   .acercaDe {
     margin-top: 10%;
   }
   .acercaDe .containerContenido .contenido {
-    margin-left: 30%;
-    max-width: 60vw;
+    margin-left: 30% !important;
+    max-width: 60vw !important;
   }
   .acercaDe .containerContenido .contenido .AD-titulo {
-    font-size: 250%;
+    font-size: 250% !important;
   }
   .acercaDe .containerContenido .contenido .AD-tituloMarca {
-    font-size: 299%;
+    font-size: 299% !important;
   }
   .contacto .fondoNaranja {
-    width: 80%;
-    margin-left: 15%;
+    width: 80% !important;
+    margin-left: 15% !important;
+  }
+  .contacto .redes .contactanosTexto {
+    font-size: 2.5em !important;
+  }
+  .contacto .redes p {
+    font-size: 60% !important;
   }
   footer .row .footerLogoContainer .logoFooter {
     width: 150%;
@@ -469,7 +479,9 @@ body .seccion1 .btn a {
   position: relative;
   top: -20vh;
   height: 125%;
+  min-height: 750px;
   border-radius: 2%;
+  margin-bottom: 5%;
 }
 
 #servicios .contenedorCards .card img {
@@ -511,10 +523,6 @@ body .seccion1 .btn a {
   font-size: 1em;
 }
 
-#servicios .cardsCollapse {
-  margin-top: 7%;
-}
-
 .acercaDe {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -524,6 +532,7 @@ body .seccion1 .btn a {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 100vh;
+  margin-top: 10%;
 }
 
 .acercaDe .fondo {
