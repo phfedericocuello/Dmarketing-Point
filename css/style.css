@@ -345,7 +345,7 @@ body .fondoasd header nav {
 body .fondoasd header nav .logo {
   padding: .5rem;
   margin-left: 3.5rem;
-  width: 10vw;
+  width: 12vw;
 }
 
 body .fondoasd header nav ul {
@@ -724,12 +724,16 @@ footer .row {
 }
 
 footer .row .footerLogoContainer {
-  margin-left: 10%;
+  margin-left: 5%;
   width: 100%;
 }
 
 footer .row .footerLogoContainer .logoFooter {
-  width: 100%;
+  width: 90%;
+}
+
+footer .row nav {
+  padding-left: 10rem;
 }
 
 footer .row nav ul {
