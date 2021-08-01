@@ -287,9 +287,12 @@
         .row {
             .footerLogoContainer {
                 .logoFooter {
-                    width: 150%;
+                    width: 20vw !important;
                     height: auto;
                 }
+            }
+            nav {
+                padding: 0 !important;
             }
         }
     }

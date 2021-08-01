@@ -291,8 +291,11 @@
     font-size: 60% !important;
   }
   footer .row .footerLogoContainer .logoFooter {
-    width: 150%;
+    width: 20vw !important;
     height: auto;
+  }
+  footer .row nav {
+    padding: 0 !important;
   }
 }
 
