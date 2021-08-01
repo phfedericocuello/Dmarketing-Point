@@ -67,6 +67,9 @@
         padding: 1rem;
         min-height: 50vh;
         max-height: 50vh;
+        .splide {
+            width: 90vw;
+        
         .mobileCard {
             height: 65vh;
         }
@@ -93,6 +96,7 @@
                 height: 100%;
             }
         }
+    }
         .botonServicios {
             width: auto !important;
             margin-top: 0 !important;
@@ -168,6 +172,10 @@
                 margin-top: 2rem;
                 height: 20rem;
                 width: 80%;
+                .carousel-control {
+                    height: 50%;
+                    margin: auto;
+                }
             }
             .redes {
                 right: 0;
