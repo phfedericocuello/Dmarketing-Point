@@ -129,7 +129,6 @@ body {
     .contenedorCards {
         display: flex;
         justify-content: space-around;
-        height: 75%;
         .card {
             position: relative;
             top: -20vh;
@@ -137,6 +136,7 @@ body {
             min-height: 750px;
             border-radius: 2%;
             margin-bottom: 5%;
+            max-height: 750px;
             img {
                 height: 20vh;
                 width: auto;

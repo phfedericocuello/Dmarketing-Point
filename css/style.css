@@ -104,6 +104,9 @@
     width: 100% !important;
     height: 100%;
   }
+  #servicios .splide .contenedorCards .card .card-body .card-text {
+    overflow: scroll;
+  }
   #servicios .botonServicios {
     width: auto !important;
     margin-top: 0 !important;
@@ -268,7 +271,7 @@
     display: none !important;
   }
   .acercaDe {
-    margin-top: 10%;
+    margin-top: -15% !important;
   }
   .acercaDe .containerContenido .contenido {
     margin-left: 30% !important;
@@ -483,7 +486,6 @@ body .seccion1 .btn a {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 75%;
 }
 
 #servicios .contenedorCards .card {
@@ -493,6 +495,7 @@ body .seccion1 .btn a {
   min-height: 750px;
   border-radius: 2%;
   margin-bottom: 5%;
+  max-height: 750px;
 }
 
 #servicios .contenedorCards .card img {

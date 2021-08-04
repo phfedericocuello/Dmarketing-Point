@@ -69,34 +69,38 @@
         max-height: 50vh;
         .splide {
             width: 90vw;
-        
-        .mobileCard {
-            height: 65vh;
-        }
-        .contenedorCards {
-            scroll-snap-type: x mandatory;
-            display: flex;
-            justify-content: flex-start !important;
-            width: 85% !important;
-            position: relative;
-            flex-wrap: nowrap;
-            height: auto;
-            overflow-x: scroll;
-            overflow-y: hidden;
-            margin: auto;
-            margin-top: 0;
-            margin-bottom: 2rem;
-            top: -10vh;
-            .card {
-                top: 0 !important;
-                scroll-snap-align: center;
-                flex: 0 0 100%;
-                object-fit: cover;
-                width: 100% !important;
-                height: 100%;
+            .mobileCard {
+                height: 65vh;
+            }
+            .contenedorCards {
+                scroll-snap-type: x mandatory;
+                display: flex;
+                justify-content: flex-start !important;
+                width: 85% !important;
+                position: relative;
+                flex-wrap: nowrap;
+                height: auto;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                margin: auto;
+                margin-top: 0;
+                margin-bottom: 2rem;
+                top: -10vh;
+                .card {
+                    top: 0 !important;
+                    scroll-snap-align: center;
+                    flex: 0 0 100%;
+                    object-fit: cover;
+                    width: 100% !important;
+                    height: 100%;
+                    .card-body {
+                        .card-text {
+                            overflow: scroll;
+                        }
+                    }
+                }
             }
         }
-    }
         .botonServicios {
             width: auto !important;
             margin-top: 0 !important;
@@ -255,7 +259,7 @@
         }
     }
     .acercaDe {
-        margin-top: 10%;
+        margin-top: -15% !important;
         .containerContenido {
             .contenido {
                 margin-left: 30% !important;
