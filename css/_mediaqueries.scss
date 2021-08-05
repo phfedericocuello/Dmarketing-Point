@@ -71,6 +71,7 @@
             width: 90vw;
             .mobileCard {
                 height: 65vh;
+                overflow: scroll;
             }
             .contenedorCards {
                 scroll-snap-type: x mandatory;
@@ -93,11 +94,7 @@
                     object-fit: cover;
                     width: 100% !important;
                     height: 100%;
-                    .card-body {
-                        .card-text {
-                            overflow: scroll;
-                        }
-                    }
+                    overflow: scroll;
                 }
             }
         }
