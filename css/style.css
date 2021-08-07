@@ -71,7 +71,7 @@
   }
   #servicios .splide .mobileCard {
     height: 65vh;
-    overflow: scroll;
+    overflow: auto;
   }
   #servicios .splide .contenedorCards {
     -ms-scroll-snap-type: x mandatory;
@@ -104,7 +104,7 @@
        object-fit: cover;
     width: 100% !important;
     height: 100%;
-    overflow: scroll;
+    overflow: auto;
   }
   #servicios .botonServicios {
     width: auto !important;
@@ -495,7 +495,7 @@ body .seccion1 .btn a {
   border-radius: 2%;
   margin-bottom: 5%;
   max-height: 750px;
-  overflow: scroll !important;
+  overflow: auto !important;
 }
 
 #servicios .contenedorCards .card img {
