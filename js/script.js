@@ -9,7 +9,7 @@ const cambiar = () => {
     if (masServicios == true) {
         aBotonServicios.innerHTML = "Ver menos servicios";
         masServicios = false;
-        $('.acercaDe').css('margin-top', '110%');
+        $('.acercaDe').css('margin-top', '60%');
     } else {
         aBotonServicios.innerHTML = "Ver más servicios";
         masServicios = true;
