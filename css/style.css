@@ -25,6 +25,7 @@
     font-size: .95em;
     margin-right: 0 !important;
     color: #FDF9F4;
+    padding: .1em;
   }
   .fondoasd header .navbar-collapse ul li a {
     padding: 0;
@@ -34,7 +35,8 @@
     background: none !important;
     border: none !important;
     font-weight: 200 !important;
-    padding: 0 !important;
+    padding: 0.1em !important;
+    font-size: 1.1em;
   }
   .fondoasd header .navbar-collapse ul li .borderBottom {
     width: 5rem;
